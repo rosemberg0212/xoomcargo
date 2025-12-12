@@ -1,210 +1,427 @@
----
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
----
 
-<div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
-			</section>
-		</section>
-	</main>
 
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
-</div>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xoom Cargo | Envíos de USA a Latinoamérica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .hero-bg {
+        background-image:
+          linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.7)),
+          url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
 
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
+    <!-- region Header -->
+    <header
+      id="inicio"
+      class="hero-bg h-[600px] flex items-center justify-center text-center px-6 mt-6"
+    >
+      <div class="max-w-4xl">
+        <h1
+          class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+        >
+          Tus compras en USA llegan hasta <span class="text-red-600"
+            >la puerta de tu casa</span
+          >
+        </h1>
+        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+          Envíos aéreos y marítimos hacia Latinoamérica. Confiables, rápidos,
+          seguros.
+          <br /><span class="font-bold text-white"
+            >Casillero gratis, consolidación sin costo y entrega puerta a
+            puerta.</span
+          >
+        </p>
+        <div class="flex flex-col md:flex-row gap-4 justify-center">
+          <a
+            href="#"
+            class="bg-red-700 text-white px-8 py-4 rounded font-bold text-lg hover:bg-red-600 transition shadow-lg"
+          >
+            Solicita tu casillero GRATIS
+          </a>
+          <a
+            href="#"
+            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded font-bold text-lg hover:bg-white hover:text-red-900 transition"
+          >
+            Cotiza tu envío ahora
+          </a>
+        </div>
+        <p class="mt-6 text-sm text-gray-400">
+          Compra en Amazon, eBay, Walmart, AliExpress… Nosotros consolidamos y
+          enviamos.
+        </p>
+      </div>
+    </header>
+    <!-- region Header -->
 
-	#container {
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-	}
+    <!-- INIT servicios -->
 
-	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
+    <section id="servicios" class="py-20 container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-red-700 mb-4">Nuestros Servicios</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Soluciones integrales diseñadas para darte tranquilidad desde la
+          compra hasta la entrega.
+        </p>
+      </div>
 
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group"
+        >
+          <div
+            class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-red-700 text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition"
+          >
+            <i class="fas fa-box-open"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Casillero Gratis</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Obtén una dirección física en EE.UU. Bodegaje gratuito hasta que
+            decidas enviar. Notificaciones al instante.
+          </p>
+        </div>
 
-	h1 {
-		font-size: 22px;
-		margin-top: 0.25em;
-	}
+        <div
+          class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group"
+        >
+          <div
+            class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-red-700 text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition"
+          >
+            <i class="fas fa-plane-departure"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Aéreo y Marítimo</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Desde paquetes pequeños hasta carga pesada. Alianzas para un
+            servicio confiable hacia Centro y Suramérica.
+          </p>
+        </div>
 
-	#links {
-		display: flex;
-		gap: 16px;
-	}
+        <div
+          class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group"
+        >
+          <div
+            class="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center text-red-700 text-2xl mb-6 group-hover:bg-red-700 group-hover:text-white transition"
+          >
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">Compramos por ti</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            ¿No sabes cómo comprar? Envíanos el link del producto, lo compramos,
+            recibimos y te lo enviamos.
+          </p>
+        </div>
 
-	#links a {
-		display: flex;
-		align-items: center;
-		padding: 10px 12px;
-		color: #111827;
-		text-decoration: none;
-		transition: color 0.2s;
-	}
+        <div
+          class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition border border-gray-100 group"
+        >
+          <div
+            class="w-14 h-14 bg-orange-50 rounded-full flex items-center justify-center text-orange-500 text-2xl mb-6 group-hover:bg-orange-500 group-hover:text-white transition"
+          >
+            <i class="fas fa-cubes"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-gray-800">
+            Consolidación Gratis
+          </h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Agrupamos varios artículos y re-empaquetamos sin costo extra para
+            que ahorres en tu envío internacional.
+          </p>
+        </div>
+      </div>
+    </section>
 
-	#links a:hover {
-		color: rgb(78, 80, 86);
-	}
+    <!-- END servicios -->
 
-	#links a svg {
-		height: 1em;
-		margin-left: 8px;
-	}
+    <!-- INIT COMO-FUNCIONA -->
 
-	#links a.button {
-		color: white;
-		background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-		box-shadow:
-			inset 0 0 0 1px rgba(255, 255, 255, 0.12),
-			inset 0 -2px 0 rgba(0, 0, 0, 0.24);
-		border-radius: 10px;
-	}
+    <section id="como-funciona" class="bg-gray-50 py-20">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center text-red-700 mb-16"
+        >
+          Mi casillero, ¿cómo funciona?
+        </h2>
 
-	#links a.button:hover {
-		color: rgb(230, 230, 230);
-		box-shadow: none;
-	}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-6 lg:sticky lg:top-24">
+            <h3 class="text-2xl font-bold text-gray-800 leading-snug">
+              Compra en tus tiendas favoritas y recibe tu paquete de forma fácil
+              y segura:
+            </h3>
+            <div class="bg-blue-900 rounded-lg shadow-xl overflow-hidden p-6">
+              <img
+                src="https://lh3.googleusercontent.com/gg-dl/ABS2GSmntCR_OVWh3T9ybX0zm59cBLUwTDM1wy2yuu7sGM_EdTOFEoEmHJ2I6QXTe8TNmTIUwpxEhuv6U7l1V5VsByoIyU8IGIbU0HTRkGsv2QqWYSOXTg--auNFvtR-N0_2dD9n4T5muM9gebMYbTKaM4UJc8L20d_SB3GsDVOWQ5eiLsesMA=s1024-rj"
+                alt="Entrega de paquetes y compras en línea"
+                class="rounded-lg object-cover w-full h-80 opacity-90"
+              />
+            </div>
+          </div>
 
-	pre {
-		font-family:
-			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
-			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
-		margin: 0;
-	}
+          <div class="space-y-10">
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-orange-500 rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold text-white shadow-md mr-4"
+              >
+                1
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-1 text-red-700">
+                  Regístrate y obtén tu casillero
+                </h4>
+                <p class="text-gray-600">
+                  Crea tu casillero gratuito y obtén tu dirección física en
+                  Miami, FL. Es tu puerta de entrada a las compras en USA y
+                  China.
+                </p>
+              </div>
+            </div>
 
-	h2 {
-		margin: 0 0 1em;
-		font-weight: normal;
-		color: #111827;
-		font-size: 20px;
-	}
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-blue-900 rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold text-white shadow-md mr-4"
+              >
+                2
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-1 text-red-700">
+                  Compra en línea con tu casillero
+                </h4>
+                <p class="text-gray-600">
+                  Al hacer tus compras en Amazon, eBay, etc., usa tu número de
+                  casillero y la dirección de Miami en el campo de dirección de
+                  envío.
+                </p>
+              </div>
+            </div>
 
-	p {
-		color: #4b5563;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: -0.006em;
-		margin: 0;
-	}
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-blue-900 rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold text-white shadow-md mr-4"
+              >
+                3
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-1 text-red-700">
+                  Recibe notificaciones de tus envíos
+                </h4>
+                <p class="text-gray-600">
+                  Cada vez que tu paquete llegue a nuestra bodega, te
+                  notificamos al instante por correo electrónico con todos los
+                  detalles.
+                </p>
+              </div>
+            </div>
 
-	code {
-		display: inline-block;
-		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
-	}
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-blue-900 rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold text-white shadow-md mr-4"
+              >
+                4
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-1 text-red-700">
+                  Consolida y Haz seguimiento
+                </h4>
+                <p class="text-gray-600">
+                  Consolida tus paquetes gratis. Te cotizamos el envío
+                  (aéreo/marítimo) y te damos seguimiento 24/7 hasta la entrega.
+                </p>
+              </div>
+            </div>
 
-	.box {
-		padding: 16px;
-		background: rgba(255, 255, 255, 1);
-		border-radius: 16px;
-		border: 1px solid white;
-	}
+            <div class="flex items-start">
+              <div
+                class="w-10 h-10 bg-green-500 rounded-full flex-shrink-0 flex items-center justify-center text-xl font-bold text-white shadow-md mr-4"
+              >
+                5
+              </div>
+              <div>
+                <h4 class="text-xl font-bold mb-1 text-red-700">
+                  Recibe tu pedido en casa
+                </h4>
+                <p class="text-gray-600">
+                  Nos encargamos del transporte, aduanas y la entrega final,
+                  puerta a puerta, en cualquier país de Latinoamérica.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	#news {
-		position: absolute;
-		bottom: 16px;
-		right: 16px;
-		max-width: 300px;
-		text-decoration: none;
-		transition: background 0.2s;
-		backdrop-filter: blur(50px);
-	}
+        <div class="text-center mt-16">
+          <a
+            href="#"
+            class="bg-red-700 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-600 transition shadow-lg"
+          >
+            ¡Solicita tu Casillero Gratis Hoy!
+          </a>
+        </div>
+      </div>
+    </section>
 
-	#news:hover {
-		background: rgba(255, 255, 255, 0.55);
-	}
+    <!-- END COMO-FUNCIONA -->
 
-	@media screen and (max-height: 368px) {
-		#news {
-			display: none;
-		}
-	}
+    <!-- INIT tarifas -->
+    <section id="tarifas" class="py-20 container mx-auto px-6">
+      <div class="flex flex-col lg:flex-row gap-12 items-center">
+        <div class="lg:w-1/2">
+          <img
+            src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+            alt="Logística Carga"
+            class="rounded-lg shadow-2xl"
+          />
+        </div>
 
-	@media screen and (max-width: 768px) {
-		#container {
-			display: flex;
-			flex-direction: column;
-		}
+        <div class="lg:w-1/2">
+          <span
+            class="text-orange-500 font-bold uppercase text-sm tracking-wide"
+            >Transparencia Total</span
+          >
+          <h2 class="text-3xl font-bold text-red-700 mt-2 mb-6">
+            Destinos y Tarifas
+          </h2>
+          <p class="text-gray-600 mb-8">
+            Cotizaciones sin compromiso y tarifas claras. Impuestos incluidos
+            cuando aplican.
+          </p>
 
-		#hero {
-			display: block;
-			padding-top: 10%;
-		}
+          <div class="space-y-6">
+            <div
+              class="bg-white p-5 rounded-lg shadow-md border-l-4 border-yellow-400 flex justify-between items-center"
+            >
+              <div>
+                <h4 class="font-bold text-lg text-gray-800">
+                  🇨🇴 Envíos a Colombia
+                </h4>
+                <p class="text-sm text-gray-500">Entrega puerta a puerta.</p>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs text-gray-400">Aéreo desde</span>
+                <span class="text-2xl font-bold text-red-700">US$ 2.00</span>
+                <span class="text-sm text-gray-600">/ libra</span>
+              </div>
+            </div>
 
-		#links {
-			flex-wrap: wrap;
-		}
+            <div
+              class="bg-white p-5 rounded-lg shadow-md border-l-4 border-red-700 flex justify-between items-center"
+            >
+              <div>
+                <h4 class="font-bold text-lg text-gray-800">
+                  🇻🇪 Envíos a Venezuela
+                </h4>
+                <p class="text-sm text-gray-500">
+                  Impuestos y gastos incluidos.
+                </p>
+              </div>
+              <div class="text-right">
+                <span class="block text-xs text-gray-400">Aéreo desde</span>
+                <span class="text-2xl font-bold text-red-700">$5.50</span>
+                <span class="text-sm text-gray-600">/ libra</span>
+              </div>
+            </div>
 
-		#links a.button {
-			padding: 14px 18px;
-		}
+            <div class="p-4 bg-gray-50 rounded-lg">
+              <h4 class="font-bold text-gray-800 mb-2">Otros Destinos:</h4>
+              <p class="text-sm text-gray-600">
+                México 🇲🇽, Panamá 🇵🇦, República Dominicana 🇩🇴.
+              </p>
+              <p class="text-xs text-gray-500 mt-2">
+                Manejamos carga volumétrica, menajes y mudanzas.
+              </p>
+            </div>
+          </div>
 
-		#news {
-			right: 16px;
-			left: 16px;
-			bottom: 2.5rem;
-			max-width: 100%;
-		}
+          <div class="mt-8">
+            <a href="/tarifas" class="text-red-600 font-bold hover:underline"
+              >Ver lista completa de tarifas &rarr;</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-		h1 {
-			line-height: 1.5;
-		}
-	}
-</style>
+    <!-- END tarifas -->
+
+    <!--INIT elegir -->
+    <section class="bg-gray-100 py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl font-bold text-red-700 mb-4">
+            ¿Por qué elegir Xoom Cargo?
+          </h2>
+          <p class="text-gray-600">
+            Más de 14 años de experiencia. Somos una empresa registrada en
+            Estados Unidos (TSA/IAC) autorizada para transporte aéreo y
+            marítimo.
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center"
+        >
+          <div class="p-4">
+            <i class="fas fa-history text-4xl text-red-300 mb-4"></i>
+            <h4 class="font-bold text-lg mb-2">Experiencia</h4>
+            <p class="text-sm text-gray-600">
+              +14 años en logística internacional.
+            </p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-hand-holding-usd text-4xl text-red-300 mb-4"></i>
+            <h4 class="font-bold text-lg mb-2">Sin Cargos Ocultos</h4>
+            <p class="text-sm text-gray-600">
+              Cotizaciones claras y transparentes.
+            </p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-shield-alt text-4xl text-red-300 mb-4"></i>
+            <h4 class="font-bold text-lg mb-2">Seguridad</h4>
+            <p class="text-sm text-gray-600">
+              Rastreo, seguro y asesoría constante.
+            </p>
+          </div>
+          <div class="p-4">
+            <i class="fas fa-clock text-4xl text-red-300 mb-4"></i>
+            <h4 class="font-bold text-lg mb-2">Flexibilidad</h4>
+            <p class="text-sm text-gray-600">
+              Tú decides cuándo y cómo enviar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--INIT elegir -->
+
+    <!-- casillero final -->
+    <section class="bg-orange-500 py-16 text-center px-6">
+      <h2 class="text-3xl font-bold text-white mb-4">¡Empieza ahora!</h2>
+      <p class="text-white mb-8 text-lg">
+        Regístrate hoy mismo, compra lo que desees en USA o China, y deja el
+        resto en nuestras manos.
+      </p>
+      <a
+        href="#"
+        class="bg-red-700 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-red-800 transition shadow-lg"
+      >
+        Solicita tu Casillero Gratis
+      </a>
+    </section>
+    <!-- casillero final -->
+  </body>
+</html>
