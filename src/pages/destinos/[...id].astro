@@ -1,0 +1,31 @@
+---
+// src/pages/destinos/[id].astro
+import { countriesData } from '../../data/contries';
+import Hero from '../../components/destinos/Hero';
+import Benefits from '../../components/destinos/Beneficios';
+import Layout from '../../layouts/Layout.astro';
+import Paises from '../../components/Paises';
+import type {CountriesDataP} from '../../data/contries' 
+
+// 1. getStaticPaths: Le dice a Astro qué páginas construir
+export function getStaticPaths() {
+  // Convertimos el objeto en un array de rutas
+  // Resultado: [{params: {id: 'mexico'}}, {params: {id: 'colombia'}}]
+  return Object.keys(countriesData).map((key) => ({
+    params: { id: key },
+  }));
+}
+
+// 2. Obtener los datos para la página actual
+const { id } = Astro.params;
+const country = countriesData[id] as CountriesDataP;
+
+// Si por alguna razón no hay datos (seguridad extra), redirigir o mostrar 404
+if (!country) {
+  return Astro.redirect('/404');
+}
+---
+
+<Layout>
+    <Paises country={country}/>
+</Layout>
