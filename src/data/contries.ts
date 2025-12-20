@@ -65,6 +65,42 @@ export const countriesData = {
       { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
       { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
     ]
+  },
+  venezuela: {
+    name: "Venezuela",
+    slug: "venezuela",
+    flagCode: "ve",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Venezuela</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a Caracas, Maracaibo, Valencia y Barquisimeto, entre otras.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "Caracas, Maracaibo, Valencia, Barquisimeto",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
+  },
+  panama: {
+    name: "Panamá",
+    slug: "panama",
+    flagCode: "pa",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Panamá</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a Ciudad de Panamá, Colón, David y todo el territorio nacional.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "Ciudad de Panamá, Colón, David",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
   }
   // Agrega más países aquí...
 };

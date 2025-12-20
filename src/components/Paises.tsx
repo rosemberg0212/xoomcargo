@@ -291,9 +291,9 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                 </section>
 
                 <section className="py-16 bg-orange-500 text-center px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para enviar a México?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para enviar a {country.name}?</h2>
                     <p className="text-white text-lg mb-8 max-w-2xl mx-auto">No lo pienses más. Abre tu casillero gratis hoy mismo y empieza a comprar en USA sin límites.</p>
-                    <a href="#" className="inline-block bg-blue-900 text-white font-bold py-4 px-10 rounded-full hover:bg-blue-800 transition shadow-xl transform hover:scale-105">
+                    <a href="#" className="inline-block bg-red-700 text-white font-bold py-4 px-10 rounded-full hover:bg-red-800 transition shadow-xl transform hover:scale-105">
                         ¡Empezar Ahora!
                     </a>
                 </section>
