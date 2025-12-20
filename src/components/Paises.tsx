@@ -14,13 +14,13 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                     <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="text-white space-y-6">
                             <div className="flex items-center space-x-3 mb-2">
-                                <img src={`https://flagcdn.com/w40/${country.flagCode}.png`} alt="Bandera México" className="h-6 rounded shadow-sm" />
-                                <span className="text-orange-500 font-bold tracking-widest uppercase text-sm">Destino: {country.name}</span>
+                                <img src={`https://flagcdn.com/w40/${country?.flagCode}.png`} alt="Bandera México" className="h-6 rounded shadow-sm" />
+                                <span className="text-orange-500 font-bold tracking-widest uppercase text-sm">Destino: {country?.name}</span>
                             </div>
 
                             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
                                 Compra en USA. <br />
-                                Recibe en <span className="text-green-400">{country.name}</span> sin complicaciones.
+                                Recibe en <span className="text-green-400">{country?.name}</span> sin complicaciones.
                             </h1>
 
                             <p className="text-lg text-blue-100 max-w-lg">
@@ -46,7 +46,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                             <div className="bg-white p-2 rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
                                 <img src="https://cdn.pixabay.com/photo/2020/11/02/10/44/aircraft-5706274_1280.jpg" alt="Equipo Xoom Cargo" className="rounded-xl" />
                                 <div className="absolute bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl border-l-4 border-green-500">
-                                    <p className="font-bold text-gray-800">Próxima salida a {country.name}:</p>
+                                    <p className="font-bold text-gray-800">Próxima salida a {country?.name}:</p>
                                     <p className="text-green-600 font-bold"><i className="fas fa-plane-departure mr-2"></i> Este Viernes</p>
                                 </div>
                             </div>
@@ -57,7 +57,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                 <section className="py-20 bg-gray-50">
                     <div className="container mx-auto px-6">
                         <div className="text-center max-w-3xl mx-auto mb-16">
-                            <h2 className="text-3xl font-bold text-red-700 mb-4">¿Por qué enviar a {country.name} con Xoom Cargo?</h2>
+                            <h2 className="text-3xl font-bold text-red-700 mb-4">¿Por qué enviar a {country?.name} con Xoom Cargo?</h2>
                             <p className="text-gray-600">Diseñado para solucionar tus problemas: sin retrasos, sin cobros ocultos y con total seguridad.</p>
                         </div>
 
@@ -83,7 +83,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                                     <i className="fas fa-shipping-fast"></i>
                                 </div>
                                 <h3 className="text-xl font-bold text-gray-800 mb-3">Entrega Puerta a Puerta</h3>
-                                <p className="text-gray-600 text-sm">Entregamos en {country.ciudades} y cualquier rincón de {country.name}. Olvida los trámites.</p>
+                                <p className="text-gray-600 text-sm">Entregamos en {country?.ciudades} y cualquier rincón de {country?.name}. Olvida los trámites.</p>
                             </div>
 
                             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition border-b-4 border-purple-500">
@@ -123,14 +123,14 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                                         <i className="fas fa-check-circle text-orange-500 mt-1 mr-4 text-xl"></i>
                                         <div>
                                             <h4 className="font-bold text-lg">Familias e Inmigrantes</h4>
-                                            <p className="text-blue-200 text-sm">Envía regalos, ropa y artículos del hogar a tus seres queridos en {country.name}.</p>
+                                            <p className="text-blue-200 text-sm">Envía regalos, ropa y artículos del hogar a tus seres queridos en {country?.name}.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start">
                                         <i className="fas fa-check-circle text-orange-500 mt-1 mr-4 text-xl"></i>
                                         <div>
                                             <h4 className="font-bold text-lg">Personal Shoppers y Revendedores</h4>
-                                            <p className="text-blue-200 text-sm">Compra al mayoreo en USA y recibe en tu negocio en {country.name} para revender.</p>
+                                            <p className="text-blue-200 text-sm">Compra al mayoreo en USA y recibe en tu negocio en {country?.name} para revender.</p>
                                         </div>
                                     </li>
                                     <li className="flex items-start">
@@ -156,7 +156,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
 
                 <section className="py-20 bg-gray-50">
                     <div className="container mx-auto px-6 max-w-5xl">
-                        <h2 className="text-3xl font-bold text-center text-red-700 mb-16">Tu envío a {country.name} en 5 pasos simples</h2>
+                        <h2 className="text-3xl font-bold text-center text-red-700 mb-16">Tu envío a {country?.name} en 5 pasos simples</h2>
 
                         <div className="relative">
                             <div className="absolute left-8 md:left-1/2 h-full w-1 bg-gray-200 transform -translate-x-1/2 hidden md:block"></div>
@@ -205,12 +205,12 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
 
                             <div className="flex flex-col md:flex-row items-center relative">
                                 <div className="md:w-1/2 text-right pr-8 hidden md:block">
-                                    <h4 className="text-xl font-bold text-blue-900">Entrega en {country.name}</h4>
+                                    <h4 className="text-xl font-bold text-blue-900">Entrega en {country?.name}</h4>
                                     <p className="text-gray-600">Recibe en la puerta de tu casa u oficina sin pagar extra al recibir.</p>
                                 </div>
                                 <div className="z-10 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl shadow-lg border-4 border-white">5</div>
                                 <div className="md:w-1/2 pl-8 md:hidden">
-                                    <h4 className="text-xl font-bold text-blue-900">Entrega en {country.name}</h4>
+                                    <h4 className="text-xl font-bold text-blue-900">Entrega en {country?.name}</h4>
                                     <p className="text-gray-600">Recibe en tu puerta sin pagos extra.</p>
                                 </div>
                                 <div className="md:w-1/2 pl-8 hidden md:block"></div>
@@ -221,7 +221,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
 
                 <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-3xl font-bold text-center text-red-700 mb-12">Lo que dicen nuestros clientes en {country.name}</h2>
+                        <h2 className="text-3xl font-bold text-center text-red-700 mb-12">Lo que dicen nuestros clientes en {country?.name}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             <div className="bg-gray-50 p-6 rounded-xl shadow-sm italic text-gray-600">
                                 <div className="text-orange-500 text-xl mb-4"><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
@@ -244,7 +244,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
 
                 <section className="py-20 bg-blue-50">
                     <div className="container mx-auto px-6 max-w-4xl">
-                        <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Preguntas Frecuentes sobre envíos a {country.name}</h2>
+                        <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">Preguntas Frecuentes sobre envíos a {country?.name}</h2>
 
                         <div className="space-y-4">
                             <details className="group bg-white rounded-lg shadow-sm">
@@ -291,7 +291,7 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                 </section>
 
                 <section className="py-16 bg-orange-500 text-center px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para enviar a {country.name}?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para enviar a {country?.name}?</h2>
                     <p className="text-white text-lg mb-8 max-w-2xl mx-auto">No lo pienses más. Abre tu casillero gratis hoy mismo y empieza a comprar en USA sin límites.</p>
                     <a href="#" className="inline-block bg-red-700 text-white font-bold py-4 px-10 rounded-full hover:bg-red-800 transition shadow-xl transform hover:scale-105">
                         ¡Empezar Ahora!
