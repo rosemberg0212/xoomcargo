@@ -6,6 +6,7 @@ import Benefits from '../../components/destinos/Beneficios';
 import Layout from '../../layouts/Layout.astro';
 import Paises from '../../components/Paises';
 import type {CountriesDataP} from '../../data/contries' 
+export const prerender = false
 
 // 1. getStaticPaths: Le dice a Astro qué páginas construir
 export function getStaticPaths() {
@@ -27,5 +28,5 @@ if (!country) {
 ---
 
 <Layout>
-    <Paises country={country}/>
+    <Paises country={country} client:load/>
 </Layout>

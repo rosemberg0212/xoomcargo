@@ -7,6 +7,9 @@ import partytown from '@astrojs/partytown';
 import tailwindcss from '@tailwindcss/vite';
 
 
+import netlify from '@astrojs/netlify';
+
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), partytown()],
@@ -15,4 +18,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
+  adapter: netlify(),
 });
