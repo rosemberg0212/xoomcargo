@@ -13,7 +13,7 @@ interface FAQ {
 }
 
 // Interfaz para la información de un país
-interface CountryData {
+export interface CountryData {
   name: string;
   slug: string;
   flagCode: string;
@@ -29,6 +29,8 @@ interface CountryData {
 export interface CountriesDataP {
   [key: string]: CountryData;
 }
+
+
 export const countriesData = {
   mexico: {
     name: "México",
