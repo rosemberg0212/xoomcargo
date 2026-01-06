@@ -249,11 +249,11 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                         <div className="space-y-4">
                             <details className="group bg-white rounded-lg shadow-sm">
                                 <summary className="flex justify-between items-center font-bold cursor-pointer list-none p-6 text-blue-900 group-open:text-orange-500 transition">
-                                    <span>¿Cuánto tarda el envío a México?</span>
+                                    <span>¿Cuánto tarda el envío a {country.name}?</span>
                                     <span className="transition group-open:rotate-180"><i className="fas fa-chevron-down"></i></span>
                                 </summary>
                                 <div className="text-gray-600 p-6 pt-0 leading-relaxed">
-                                    Nuestros envíos aéreos a México tienen un tiempo estimado de entrega de <strong>5 a 7 días hábiles</strong> desde que el paquete sale de nuestra bodega en Miami.
+                                    Nuestros envíos aéreos a {country.name} tienen un tiempo estimado de entrega de <strong>5 a 7 días hábiles</strong> desde que el paquete sale de nuestra bodega en Miami.
                                 </div>
                             </details>
 

@@ -103,6 +103,78 @@ export const countriesData = {
       { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
       { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
     ]
+  },
+  costa_rica: {
+    name: "Costa Rica",
+    slug: "costa-rica",
+    flagCode: "cr",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Panamá</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a San José, Alajuela, Heredia, Cartago y todo el territorio nacional.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "San José, Alajuela, Heredia, Cartago",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
+  },
+  honduras: {
+    name: "Honduras",
+    slug: "honduras",
+    flagCode: "hn",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Panamá</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a Tegucigalpa, San Pedro Sula, La Ceiba y todo el territorio nacional.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "Tegucigalpa, San Pedro Sula, La Ceiba",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
+  },
+  republica_dominicana: {
+    name: "República Dominicana",
+    slug: "republica_dominicana",
+    flagCode: "do",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Panamá</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a Santo Domingo, Puerto Plata, Santiago de los Caballeros y todo el territorio nacional.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "Santo Domingo, Puerto Plata, Santiago de los Caballeros",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
+  },
+  ecuador: {
+    name: "Ecuador",
+    slug: "ecuador",
+    flagCode: "ec",
+    heroTitle: "Tus compras de USA en <span class='text-yellow-400'>Panamá</span> en tiempo récord.",
+    heroSubtitle: "Llegamos a Guayaquil, Quito, Cuenca y todo el territorio nacional.",
+    heroImage: "https://images.unsplash.com/photo-1590497534390-3482755e6e31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    ciudades: "Guayaquil, Quito, Cuenca",
+    benefits: [
+      { icon: "fas fa-box-open", title: "Consolidación", text: "Junta tus paquetes y ahorra." },
+      { icon: "fas fa-truck-moving", title: "Mudanzas", text: "Menajes para retornados." },
+      { icon: "fas fa-shield-alt", title: "Seguro Total", text: "Tu carga viaja asegurada." }
+    ],
+    faq: [
+      { q: "¿Tiempos a Colombia?", a: "Aéreo 4-6 días, Marítimo 3-4 semanas." },
+      { q: "¿Qué necesito?", a: "Solo tu cédula y casillero virtual." }
+    ]
   }
   // Agrega más países aquí...
 };

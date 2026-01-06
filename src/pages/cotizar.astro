@@ -1,0 +1,75 @@
+---
+import Calculator from '../components/QuoteCalculator';
+import Layout from '../layouts/Layout.astro';
+---
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizar Envío | Xoom Cargo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .bg-pattern {
+            background-color: #f3f4f6;
+            background-image: radial-gradient(#d1d5db 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<Layout>
+    <body class="bg-pattern min-h-screen text-gray-800">
+    
+        <section class="text-center pt-16 pb-10 px-6 mt-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-4">
+                Cotiza tu envío en segundos
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Sin registros previos. Calcula el costo estimado de tu paquete aéreo o marítimo y toma la mejor decisión.
+            </p>
+        </section>
+    
+        <section class="px-6 pb-20 relative z-10">
+            <Calculator client:load />
+    
+            <div class="max-w-4xl mx-auto mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center opacity-70 grayscale hover:grayscale-0 transition duration-500">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-shield-alt text-3xl mb-2 text-blue-900"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Pago Seguro</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-plane-departure text-3xl mb-2 text-blue-900"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Salidas Diarias</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-user-headset text-3xl mb-2 text-blue-900"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Soporte Humano</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-box-open text-3xl mb-2 text-blue-900"></i>
+                    <span class="text-xs font-bold uppercase tracking-wider">Reempaque Gratis</span>
+                </div>
+            </div>
+        </section>
+    
+        <section class="bg-white py-16 border-t border-gray-200">
+            <div class="container mx-auto px-6 max-w-3xl text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-8">Dudas Frecuentes al Cotizar</h3>
+                <div class="space-y-6 text-left">
+                    <div>
+                        <h4 class="font-bold text-blue-900"><i class="fas fa-question-circle text-orange-500 mr-2"></i> ¿El precio incluye impuestos?</h4>
+                        <p class="text-gray-600 text-sm mt-1 ml-6">El estimado incluye flete y manejo. Los impuestos aduanales dependen del valor declarado y del país destino (Ej. Colombia cobra impuestos si supera $200 USD bajo ciertas modalidades).</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-blue-900"><i class="fas fa-question-circle text-orange-500 mr-2"></i> ¿Qué pasa si mis medidas no son exactas?</h4>
+                        <p class="text-gray-600 text-sm mt-1 ml-6">No te preocupes. Al recibir tu paquete en Miami, lo medimos con láser certificado y ajustamos la cotización final antes de cobrarte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </body>
+</Layout>
