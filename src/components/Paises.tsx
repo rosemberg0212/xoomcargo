@@ -28,10 +28,10 @@ const Paises: React.FC<CountriesDataP> = ({country}) => {
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                <a href="#" className="bg-red-700 text-white text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-500 transition shadow-lg transform hover:-translate-y-1">
+                                <a href="/cotizar" className="bg-red-700 text-white text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-red-500 transition shadow-lg transform hover:-translate-y-1">
                                     Cotiza Ahora
                                 </a>
-                                <a href="#" className="bg-white text-red-700 text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">
+                                <a href="https://enviosxoomcargo.helgasys.com/clients/home" className="bg-white text-red-700 text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg">
                                     Solicita tu Casillero Gratis
                                 </a>
                             </div>
